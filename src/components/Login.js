@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
 function Login() {
   return (
-    <div className="bg-sky-900  w-full h-[90vh] flex flex-col justify-evenly  items-center bg-gradient-to-t from-teal-900">
+    <div
+      className="bg-sky-900  w-full h-[90vh] flex flex-col justify-evenly  items-center bg-gradient-to-t from-teal-900" style={{
+        backgroundImage: ` url(
+          "https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGFyayUyMG1vdW50YWlufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+        )`,
+        backgroundBlendMode:"lighten",
+        backgroundRepeat:"no-repeat"
+      }}
+    >
       <h1 className="font-bold text-5xl">
         <span className="text-sky-400">Doctor </span>Login
       </h1>
@@ -37,7 +45,7 @@ function Login() {
               to={"/organs"}
               className="mx-auto bg-sky-400 text-slate-800 font-[inter] py-2 px-4 rounded-full uppercase font-semibold hover:shadow hover:shadow-sky-900 hover:bg-sky-50 hover:text-sky-700"
             >
-              Login
+              Submit
             </Link>
           </form>
         </div>
